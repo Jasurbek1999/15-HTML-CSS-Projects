@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    background-color: #332720;
+    color: #fff;
+}
+
+.background-text {
+    font-family: 'Titan One', sans-serif;
+    font-size: 200px;
+    letter-spacing: 20px;
+
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    background-image: url("/pexels-marina-leonova-7718254.jpg");
+    background-size: 120%;
+    animation: bg-animation 30s cubic-bezier(0.3, 0, 0.7, 1) infinite;
+}
+
+@keyframes bg-animation {
+    0% {background-position: 0% 0%;}
+    50% {background-position: 100% 100%;}
+    100% {background-position: 0% 0%;}
+}
